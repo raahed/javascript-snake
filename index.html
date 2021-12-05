@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- snake by raah -->
+        <title>Snake</title>
+        <style>
+            .outter-play {
+                display: flex;
+                justify-content: center;
+            }
+            #playground {
+                border: 1px solid black;
+            }
+        </style>
+        <script src="game_engine.js"></script>
+    </head>
+    <body>
+        <div class="outter-play">
+            <canvas id="playground"></canvas>
+            <ul>
+                <li>Total Score <span id="total-score"></span></li>
+            </ul>
+            <p>Use W,A,S or D to start</p>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", setup)
+            document.addEventListener("keydown", event)
+        </script>
+    </body>
+</html>
